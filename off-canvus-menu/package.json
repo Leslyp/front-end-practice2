@@ -1,0 +1,25 @@
+{
+  "name": "front-end-practice2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leslyp/front-end-practice2.git"
+  },
+  "author": "Lesly Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leslyp/front-end-practice2/issues"
+  },
+  "homepage": "https://github.com/Leslyp/front-end-practice2#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
