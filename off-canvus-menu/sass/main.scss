@@ -1,3 +1,126 @@
-h1 {
-    color: red;
+body {
+    margin: 0;
 }
+    
+.sidenav {
+    background-color: #111;
+    height: 100%;
+    left: 0;
+    overflow-x: hidden; // hides side nav content when it's not open
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    width: 0;
+    z-index: 1;
+
+    a {
+        color: #818181;
+        display: block;
+        font-size: 25px;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+
+        &:hover {
+            color: #f1f1f1;
+        }
+    }
+
+    .closebtn {
+        font-size: 36px;
+        margin-left: 50px;
+        position: absolute;
+        right: 25px;
+        top: 0;
+    }
+}
+
+.main {
+    &__nav {
+        background-color: antiquewhite;
+        font-size: 30px;
+        padding: 10px 20px;
+        
+        &-icon {
+            cursor: pointer;
+            margin-right: 70%;
+        }
+    
+        &-logo {
+            position: absolute;
+            right: 40px;
+        }
+    }
+
+    &__content {
+        padding: 20px;
+    }
+}
+
+.showNav {
+    width: 60%;
+
+    @media screen and (min-width: 1200px) { 
+        width: 25%;
+    }
+}
+
+
+
+//                   OLD STYLES 
+ 
+// .sidenav {
+//     background-color: #111;
+//     height: 100%;
+//     left: 0;
+//     overflow-x: hidden;
+//     padding-top: 60px;
+//     position: fixed;
+//     top: 0;
+//     transition: 0.5s;
+//     width: 0;
+//     z-index: 1;
+
+//     a {
+//         color: #818181;
+//         display: block;
+//         font-size: 25px;
+//         padding: 8px 8px 8px 32px;
+//         text-decoration: none;
+//         transition: 0.3s;
+
+//         &:hover {
+//             color: #f1f1f1;
+//         }
+//     }
+
+//     .closebtn {
+//         font-size: 36px;
+//         margin-left: 50px;
+//         position: absolute;
+//         right: 25px;
+//         top: 0;
+//     }
+// }
+
+// .main {
+//     &__nav-icon {
+//         cursor: pointer;
+//         font-size: 30px;
+//     }
+// }
+
+// #main {
+//     padding: 16px;
+//     transition: margin-left .5s;
+// }
+
+// @media screen and (max-height: 450px) {
+//     .sidenav {
+//         padding-top: 15px;
+
+//         a {
+//             font-size: 18px;
+//         }
+//     }
+// }

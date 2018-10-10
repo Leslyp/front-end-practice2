@@ -1,2 +1,48 @@
-h1 {
-  color: red; }
+body {
+  margin: 0; }
+
+.sidenav {
+  background-color: #111;
+  height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  position: fixed;
+  top: 0;
+  transition: 0.5s;
+  width: 0;
+  z-index: 1; }
+  .sidenav a {
+    color: #818181;
+    display: block;
+    font-size: 25px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none; }
+    .sidenav a:hover {
+      color: #f1f1f1; }
+  .sidenav .closebtn {
+    font-size: 36px;
+    margin-left: 50px;
+    position: absolute;
+    right: 25px;
+    top: 0; }
+
+.main__nav {
+  background-color: antiquewhite;
+  font-size: 30px;
+  padding: 10px 20px; }
+  .main__nav-icon {
+    cursor: pointer;
+    margin-right: 70%; }
+  .main__nav-logo {
+    position: absolute;
+    right: 40px; }
+
+.main__content {
+  padding: 20px; }
+
+.showNav {
+  width: 60%; }
+  @media screen and (min-width: 1200px) {
+    .showNav {
+      width: 25%; } }

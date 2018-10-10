@@ -3,10 +3,44 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>JS Bin</title>
+        <title>Front-end Practice</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
+    <!-- old body -->
+    <!-- <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="main" id="main">
+            <h2>Sidenav Push Example</h2>
+            <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+            <span class="main__nav-icon" onclick="openNav()">&#9776; open</span>
+        </div>
+        <script src="js/main.js"></script>
+    </body> -->
+
     <body>
-        <h1>Hello world</h1>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="removeShowClass()">&times;</a> 
+            <a href="#" >About</a>
+            <a href="#" >Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="main" id="main">
+            <div class="main__nav">
+                <span class="main__nav-logo">Logo</span>
+                <span class="main__nav-icon" onclick="addShowClass()">&#9776;</span>
+            </div>
+            <div class="main__content">
+                <h2>Sidenav Push Example</h2>
+                <p>Click on the menu icon to open the side navigation menu</p>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
     </body>
 </html>
